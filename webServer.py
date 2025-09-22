@@ -3,8 +3,6 @@ from socket import *
 # In order to terminate the program
 import sys
 
-
-
 def webServer(port=13331):
   serverSocket = socket(AF_INET, SOCK_STREAM)
   
@@ -12,7 +10,7 @@ def webServer(port=13331):
   serverSocket.bind(("", port))
   
   #Fill in start
-
+  serverSocket.listen(1)
   #Fill in end
 
   while True:
